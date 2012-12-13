@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="holodeck" elementType="Argument">
+            <stringProp name="Argument.name">holodeck</stringProp>
+            <stringProp name="Argument.value">${__P(holodeck,0)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="db.host" elementType="Argument">
+            <stringProp name="Argument.name">db.host</stringProp>
+            <stringProp name="Argument.value">${__P(db.host,db.host)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="db.user" elementType="Argument">
+            <stringProp name="Argument.name">db.user</stringProp>
+            <stringProp name="Argument.value">${__P(db.user,db.user)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="db.pass" elementType="Argument">
+            <stringProp name="Argument.name">db.pass</stringProp>
+            <stringProp name="Argument.value">${__P(db.pass,db.pass)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host.membase" elementType="Argument">
+            <stringProp name="Argument.name">host.membase</stringProp>
+            <stringProp name="Argument.value">${__P(host.membase,host.membase)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host.www" elementType="Argument">
+            <stringProp name="Argument.name">host.www</stringProp>
+            <stringProp name="Argument.value">${__P(host.www, host.www)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host.secure" elementType="Argument">
+            <stringProp name="Argument.name">host.secure</stringProp>
+            <stringProp name="Argument.value">${__P(host.secure, host.secure)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host.services" elementType="Argument">
+            <stringProp name="Argument.name">host.services</stringProp>
+            <stringProp name="Argument.value">${__P(host.services, host.services)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host.mobilepartner" elementType="Argument">
+            <stringProp name="Argument.name">host.mobilepartner</stringProp>
+            <stringProp name="Argument.value">${__P(host.mobilepartner,host.mobilepartner)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_1" elementType="Argument">
+            <stringProp name="Argument.name">volume_1</stringProp>
+            <stringProp name="Argument.value">${__P(volume_1,volume_1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_1_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_1_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_1_title,volume_1_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_2" elementType="Argument">
+            <stringProp name="Argument.name">volume_2</stringProp>
+            <stringProp name="Argument.value">${__P(volume_2,volume_2)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_2_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_2_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_2_title,volume_2_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_3" elementType="Argument">
+            <stringProp name="Argument.name">volume_3</stringProp>
+            <stringProp name="Argument.value">${__P(volume_3,volume_3)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_3_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_3_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_3_title,volume_3_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_4" elementType="Argument">
+            <stringProp name="Argument.name">volume_4</stringProp>
+            <stringProp name="Argument.value">${__P(volume_4,volume_4)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_4_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_4_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_4_title,volume_4_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_5" elementType="Argument">
+            <stringProp name="Argument.name">volume_5</stringProp>
+            <stringProp name="Argument.value">${__P(volume_5,volume_5)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_5_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_5_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_5_title,volume_5_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_book" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_book</stringProp>
+            <stringProp name="Argument.value">20a8ba51-9e6e-476f-9ee2-98ff13e9dc37</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_volume_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_volume_title</stringProp>
+            <stringProp name="Argument.value">Ten Commandments</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_existing" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_existing</stringProp>
+            <stringProp name="Argument.value">88888888-4444-4444-4444-cccccccccccc</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_existing_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_existing_title</stringProp>
+            <stringProp name="Argument.value">N/A</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_deactivated" elementType="Argument">
+            <stringProp name="Argument.name">volume_deactivated</stringProp>
+            <stringProp name="Argument.value">${__P(volume_deactivated,volume_deactivated)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_deactivated_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_deactivated_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_deactivated_title,volume_deactivated_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_book" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_book</stringProp>
+            <stringProp name="Argument.value">df96d70f-3a8a-4dc4-b2a1-a4161d46a2ab</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_volume_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_volume_title</stringProp>
+            <stringProp name="Argument.value">Harlequin Superromance</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_geo_available" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_geo_available</stringProp>
+            <stringProp name="Argument.value">3b3415a7-c307-446a-b37e-ba5efc0274d8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_not_geo_available_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_not_geo_available_title</stringProp>
+            <stringProp name="Argument.value">Cards On The Table GB</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_1" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_1</stringProp>
+            <stringProp name="Argument.value">${__P(volume_free_1,volume_free_1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_1_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_1_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_free_1_title,volume_free_1_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_2" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_2</stringProp>
+            <stringProp name="Argument.value">${__P(volume_free_2,volume_free_2)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="volume_free_2_title" elementType="Argument">
+            <stringProp name="Argument.name">volume_free_2_title</stringProp>
+            <stringProp name="Argument.value">${__P(volume_free_2_title,volume_free_2_title)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1337809282000</longProp>
+        <longProp name="ThreadGroup.end_time">1337809282000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test Case - One" enabled="true">
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST POST" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;resource&gt;&#xd;
+  &lt;ID&gt;${__BeanShell(System.currentTimeMillis()/1000)}&lt;/ID&gt;&#xd;
+  &lt;NAME&gt;Coffee&lt;/NAME&gt;&#xd;
+  &lt;PRICE&gt;1.23&lt;/PRICE&gt;&#xd;
+&lt;/resource&gt;</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://www.thomas-bayer.com/sqlrest/PRODUCT/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49587">201</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="false">
+              <stringProp name="XPathExtractor.default">Error</stringProp>
+              <stringProp name="XPathExtractor.refname">CertId</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//path/to/CertId</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">false</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+              <stringProp name="RegexExtractor.refname">CertId</stringProp>
+              <stringProp name="RegexExtractor.regex">Location: .*/(\d+)</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST GET" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://www.thomas-bayer.com/sqlrest/PRODUCT/${CertId}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
+              <boolProp name="XPath.negate">false</boolProp>
+              <stringProp name="XPath.xpath">/PRODUCT/NAME = &quot;Coffee&quot;</stringProp>
+              <boolProp name="XPath.validate">false</boolProp>
+              <boolProp name="XPath.whitespace">false</boolProp>
+              <boolProp name="XPath.tolerant">false</boolProp>
+              <boolProp name="XPath.namespace">false</boolProp>
+            </XPathAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET HTML" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">www.google.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Clean HTML" enabled="true">
+              <boolProp name="resetInterpreter">true</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import org.htmlcleaner.HtmlCleaner;
+import org.htmlcleaner.PrettyXmlSerializer;
+
+        try {
+            HtmlCleaner cleaner = new HtmlCleaner();
+            String body = new PrettyXmlSerializer(cleaner.getProperties()).getAsString(cleaner.clean(prev.getResponseDataAsString()), prev.getDataEncodingNoDefault());
+            prev.setResponseData(body, prev.getDataEncodingNoDefault());
+        } catch (Exception e) {
+            Failure = true;
+            FailureMessage = e.getMessage();
+        }</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="233818479">Google Search</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
+              <boolProp name="XPath.negate">false</boolProp>
+              <stringProp name="XPath.xpath">//input[@type=&quot;submit&quot;]/@value = &quot;Google Search&quot;</stringProp>
+              <boolProp name="XPath.validate">false</boolProp>
+              <boolProp name="XPath.whitespace">false</boolProp>
+              <boolProp name="XPath.tolerant">false</boolProp>
+              <boolProp name="XPath.namespace">false</boolProp>
+            </XPathAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
